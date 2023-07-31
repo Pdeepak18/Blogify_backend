@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    
+    <link rel="stylesheet" href="table1.css">
+    <style>th, td {border: 1px solid black;}   
+    </style>
+</head>
+
+<body>
+    <table>
+           
+            <tr>
+                <form class="t_head" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <tr>
+                         <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th></th>
+
+                    </tr>
+                       <label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <td><input type="text" name="id" placeholder="ID" id="id"></td>     
+                           <td>
+                            <div>
+                                <input type="text" name="name" placeholder="Name" id="name">
+                            </div>
+                            </td>
+                    
+                    
+                        <td> 
+                            <div>                        
+                            </div><input type="text" name="age" placeholder="Age" id="age">
+                        </div>
+                    </td>
+                    
+                    
+                        <td> 
+                            <div>
+                                <select name="gender" id="gender">
+                                <option value=""></option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            <!-- <input type="text" name="gender" placeholder="Gender" id="gender"> -->
+                        </div>
+                    </td>
+                    <td>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="add" id="button">
+                    </div>
+                </td>
+                </form>
+            </tr>
+  
+        </table>
+            <div id="employee_list">
+            <h3>Employee List</h3>
+        </div>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+   
+        
+    
+    <script src="table1.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="table.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>th, td {border: 1px solid black;}   
+    </style>
+</head>
+<body>
+    
+<table>
+
+<tr>
+    <td>
+        <form onsubmit="event.preventDefault();onFormsubmit();" autocomplete="off">
+            <div>
+    <label>ID</label>
+    <input type="text" name="ID" id="id">
+</div>
+<div>
+    <label>Name</label>
+    <input type="text" name="Name" id="name">
+</div>
+<div>
+    <label>Age</label>
+    <input type="text" name="Age" id="age">
+</div> -->
+
+
+
+
+
+
+
+
+<!-- <div>
+    <select name="gender" id="gender">
+        <option value=""></option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select>
+    
+</div> -->
+
+
+
+
+
+
+    <!-- <div class="form-action-buttons">
+        <input type="submit" value="add">
+    </div>
+</form>
+</td>
+<td>
+<table class="list" id="employeeList">
+    <thead>
+<tr>
+<th>ID</th>
+<th>name</th>
+<th>Age</th>
+<th>Gender</th>
+
+</tr>
+
+    </thead>
+   <tbody>
+
+
+   </tbody>
+
+
+</table>
+
+</td>
+
+
+</tr>
+</table>
+ -->
+
+
+
+
+
+
+
+<!-- <tr>
+<td>
+<input type="text" id="tetid" placeholder="Enter ID">
+</td>
+<td>
+    <input type="text" id="txtname" placeholder="Enter Name">
+
+</td>
+<td>
+    <input type="text" id="txtage" placeholder="Enter Age">
+
+</td>
+<td>
+ 
+<select name="gender" id="txtgender">
+    <option value=""></option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+</select>
+
+</td>
+<td>
+    <input type="button" value="add" onclick="Insert()">
+</td>
+</tr>
+
+</table>
+
+<fieldset style="text-align:center; border: none;">
+<h3>Employee List</h3>
+</fieldset>
+<table class="t_head1">
+    <thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Age</th>
+<th>Gender</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="tbl"></tbody>
+</table> -->
+
+
+
+<!-- <script>
+    function Insert(){
+        var name=document.getElementById('txtid').value;
+        var name=document.getElementById('txtname').value;
+        var name=document.getElementById('txtage').value;
+        var name=document.getElementById('txtgender').value;
+
+
+        var table = `<tr>
+            <td>${ID}</td>
+            <td>${Name}</td>
+            <td>${Age}</td>
+            </tr>`;
+            document.getElementById('tbl').innerHTML += table;
+            clearForm();
+    }
+    function clearForm(){
+        document.getElementById('txtid').value="";
+        document.getElementById('txtname').value="";
+        document.getElementById('txtage').value="";
+        document.getElementById('txtgender').value="";
+
+    } -->
+
+
+<!-- </script> -->
+</body>
+</html>
